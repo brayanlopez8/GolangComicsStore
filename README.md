@@ -1,1 +1,2 @@
 # GolangComicsStore
+Release Version
