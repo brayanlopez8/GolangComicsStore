@@ -48,3 +48,5 @@ site/vendor
 
 .vs
 
+.envdev
+api/main.go
