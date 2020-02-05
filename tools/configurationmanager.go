@@ -1,5 +1,12 @@
 package tools
 
+import (
+	"log"
+	"os"
+
+	"github.com/joho/godotenv"
+)
+
 //ReadConfig read key config by name
 func ReadConfig(key string) string {
 

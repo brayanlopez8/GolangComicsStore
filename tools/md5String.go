@@ -1,6 +1,9 @@
 package tools
 
-import ()
+import (
+	"crypto/md5"
+	"fmt"
+)
 
 func digestString(t string, publicKey string, privateKey string) string {
 	return fmt.Sprintf("%x", md5.Sum([]byte(t+privateKey+publicKey)))

@@ -6,6 +6,6 @@ import (
 
 func main() {
 	r := gin.Default()
-	r.GET("/ping", pingControl.Ping)
+	r.GET("/ping", pingController.Ping)
 
 }
