@@ -1,14 +1,13 @@
-package pingcontroller
+package comicscontroller
 
 import (
 	"fmt"
-
 	"github.com/brayanlopez8/GolangComicsStore/tools"
 	"github.com/gin-gonic/gin"
 )
 
-//Ping test service
-func Ping(c *gin.Context) {
+//listComics get comics
+func listComics(c *gin.Contex {
 	var key = tools.GenerateKeyMarvel()
 	fmt.Println(key)
 	// fmt.Println("Hola Mundo")

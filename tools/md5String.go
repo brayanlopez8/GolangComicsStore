@@ -12,7 +12,7 @@ func digestString(t string, publicKey string, privateKey string) string {
 //GenerateKeyMarvel get configuration portal marvel by api calls
 func GenerateKeyMarvel() string {
 	t := "1"
-	privateKey := "STRING DE LLAVE PRIVADA"
-	publicKey := "STRING DE LLAVE PUBLICA"
+	privateKey := ReadConfig("PUBLICKEY") //"STRING DE LLAVE PRIVADA"
+	publicKey := ReadConfig("PRIVATEKEY") //"STRING DE LLAVE PUBLICA"
 	return digestString(t, publicKey, privateKey)
 }
