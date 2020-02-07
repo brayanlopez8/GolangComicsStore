@@ -11,7 +11,7 @@ import (
 func ReadConfig(key string) string {
 
 	// load .env file
-	err := godotenv.Load(".envdev")
+	err := godotenv.Load("configs/.envdev")
 
 	if err != nil {
 		log.Fatalf("Error loading .env file")
