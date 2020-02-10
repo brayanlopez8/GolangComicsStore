@@ -14,8 +14,8 @@ func digestString(t string, publicKey string, privateKey string) string {
 func GenerateKeyMarvel() string {
 	t := "1"
 	privateKey := os.Getenv("PUBLICKEY")
-	fmt.Sprintln(privateKey)
+	fmt.Println("PUBLICKEY: " + privateKey)
 	publicKey := os.Getenv("PRIVATEKEY")
-	fmt.Sprintln(publicKey)
+	fmt.Println("PRIVATEKEY: " + publicKey)
 	return digestString(t, publicKey, privateKey)
 }
