@@ -1,4 +1,4 @@
-package comicUseCase
+package comic
 
 import (
 	comicModel "github.com/brayanlopez8/GolangComicsStore/internal/model"

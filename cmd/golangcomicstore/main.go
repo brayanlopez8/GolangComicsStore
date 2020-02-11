@@ -1,7 +1,6 @@
 package main
 
 import (
-	comicscontroller "github.com/brayanlopez8/GolangComicsStore/internal/controller/comics"
 	pingcontroller "github.com/brayanlopez8/GolangComicsStore/internal/controller/ping"
 	"github.com/gin-gonic/gin"
 )
@@ -9,6 +8,6 @@ import (
 func main() {
 	r := gin.Default()
 	r.GET("/ping", pingcontroller.Ping)
-	r.GET("/comics", comicscontroller.ListComics)
+	// r.GET("/comics", comicscontroller.)
 	r.Run()
 }
